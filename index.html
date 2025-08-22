@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .welcomeBanner{
+                background-color: rgb(47, 47, 185);
+                color: rgb(0, 0, 0);
+                padding-bottom: 2px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <section id = "home">
+                <a href = "help.html">Home</a>
+            </section id = "events">
+            <section>
+                <a href = "help.html">Events</a>
+            </section>
+            <section id = "contact">
+                <a href = "help.html">Contact</a>
+            </section>
+        </nav>
+        <div>
+            <div class="welcomeBanner"><h1>Welcome Back <span class="highlight">Peeps!</span></h1><h2>(<span id="sale">50% sale</span> on buying <span class="highlight">2 tickets</span> of any event)</h2></div>
+
+            <div>
+                <div class="table" style="float :right;">
+                    <h1 style="margin-left:375px; text-decoration: underline;">EVENT GALLERY</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/sm.jpg" alt="seedhe_maut" class="border">
+                            </td>
+                            <td>
+                                <img src="images/king.jpg" alt="king" class="border">
+                            </td>
+                            <td>
+                                <img src="images/epr.jpg" alt="epr" class="border">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/raftaar.jpeg" alt="raftaar" class="border">
+                            </td>
+                            <td>
+                                <img src="images/arijit.webp" alt="arijit" class="border">
+                            </td>
+                            <td>
+                                <img src="images/shreya.jfif" alt="shreya" class="border">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="float:left; margin-left: 75px;" class="form1">
+                    <form>
+                        <h1><b><i>Fill the Form!</i></b></h1>
+                        <input type="text" name="name" placeholder="Name" required autofocus><br><br>
+
+                        <input type="number" placeholder="Phone No." required autofocus class="phone" onblur="
+                        validate();
+                        "><br><br>
+
+                        <div class="validate"></div>
+
+                        <input type="email" name="email" placeholder="Email" required autofocus><br><br>
+
+                        <input type="date" name="date" placeholder="Date" required autofocus><br><br>
+
+                        <select required autofocus class="val" onchange="
+                        fee();
+                        ">
+                            <option value="" disabled selected hidden>Event Type</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Hiphop">Hiphop</option>
+                        </select><br><br>
+
+                        <div class="fee"></div>
+
+                        <textarea name="msg" id="msg" placeholder="Enter message"></textarea><br><br>
+
+                        <button style="color:white; background-color: green; height:30px; width: 100px" onclick="
+                        show();
+                        conf(this.form);
+                        ">Submit</button>
+
+                        <div class="display"></div>
+                    </form>
+                </div>
+            </div>
+
+            <h2 style="margin-left: 900px;text-decoration: underline;">vid promo</h2>
+            
+            <div>
+                <video src="video/vid_promo.mp4" width="600px" controls style="margin-right: 230px;margin-left:100px;margin-bottom:50px;float:right"></video>
+                
+                <button style="float:left;color:white;background-color: red;font-size:x-large; border: 5px black dotted; margin-left: 200px;padding:10px;" onclick="
+                findNearbyEvents();
+                ">Find Events</button>
+                <div id="output" style="margin-left:400px"></div>
+            </div>
+        </div>
+        <br><br><br><br>
+
+        <h2 style="padding:15px;margin-left:140px;text-decoration: underline;">Community Bulletin</h2>
+            <div class="news-article">
+                <p>Raftar concert tickets are selling fast!!</p>
+                <p>Stampede occured at Yuvabharati stadium!!</p>
+            </div>
+
+            <script src="main.js"></script>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

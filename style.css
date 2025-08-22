@@ -1,0 +1,69 @@
+#sale{
+    color: rgb(235, 173, 173);
+    text-decoration: underline;
+}
+body{ 
+    background-image: url(images/fallback4.webp);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+
+}
+a:link{
+    color:rgb(211, 78, 7);
+}
+a:hover{
+    cursor:pointer;
+    color:blue;
+}
+h1{
+    background: linear-gradient(45deg, #00796b, #48c9b0)
+}
+.highlight{
+    color: rgb(216, 216, 17);
+    padding:4px;
+}
+.border{
+    border: 2px black solid;
+    height:175px;
+}
+/*table styles*/
+.table{
+    width: 350px;
+    height: 550px;
+    margin-right: 650px;
+}
+/*input field types*/
+input{
+    height: 30px;
+    width: 300px
+}
+select{
+    height:30px;
+}
+textarea{
+    width:300px;
+    height:80px;
+}
+section{
+    display: inline;
+}
+video{
+    border: 5px black solid;
+}
+form{
+    border:7px black double;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+}
+.news-article {
+    column-count: 2;
+    column-gap: 30px;  
+    column-rule: 1px solid gray;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left:30px;
+  }
